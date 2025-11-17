@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family-asap:"Asap", sans-serif;
+    --font-family-inconsolata:"Inconsolata", sans-serif;
+    --font-family-maven:"Maven Pro", sans-serif;
+
+    --title-lg:Bold 56px/120% var(--font-family-asap);
+    --title-md:Bold 24px/120% var(--font-family-asap);
+    --title-sm:Bold 16px/120% var(--font-family-asap);
+
+    --subtitle:Regular 20px/120% var(--font-family-inconsolata);
+    --text-md:Regular 16px/140% var(--font-family-maven);
+    --text-sm:Regular 14px/140% var(--font-family-maven);
+
+
+    --principal-red:#E3646E;
+    --principal-purple:#BB72E9;
+    --principal-blue:#3996DB;
+    --principal-green:#82BC4F;
+    --principal-yellow:#EABD5F;
+
+    --base-gray-100:#E2E4E9;
+    --base-gray-200:#C0C4CE;
+    --base-gray-300:#878EA1;
+    --base-gray-400:#292C34;
+    --base-gray-500:#16181D;
+    --base-gray-600:#0D0E11;
+
+
+
+}
+body{
+    background-color: var(--base-gray-600);
+}
+h1{
+    color:var(--base-gray-100);
+    font: var(--title-lg);
+}
+h2{
+    color:var(--base-gray-200);
+    font: var(--subtitle);
+}
+h3{ 
+    color: var(--base-gray-100);
+    font:var(--title-sm);
+}
+
+main{
+    display:grid;
+    grid-template-areas:"profile profile"
+    "projects projects"
+    "services services"
+    "contact contact";
+}
