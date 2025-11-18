@@ -9,7 +9,14 @@
 .grid-flow-col{
     grid-auto-flow: column;
 }
-
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.gap-8{
+ gap:8px;
+}
 .text-sm{
     color:var(--base-gray-300);
     font:var(--text-sm);

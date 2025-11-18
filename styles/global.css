@@ -33,8 +33,22 @@
 
 
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
     background-color: var(--base-gray-600);
+}
+
+main{
+    display:grid;
+    grid-template-areas:"profile profile"
+    "projects projects"
+    "services services"
+    "contact contact";
+}
+a{
+
 }
 h1{
     color:var(--base-gray-100);
@@ -47,12 +61,4 @@ h2{
 h3{ 
     color: var(--base-gray-100);
     font:var(--title-sm);
-}
-
-main{
-    display:grid;
-    grid-template-areas:"profile profile"
-    "projects projects"
-    "services services"
-    "contact contact";
 }
