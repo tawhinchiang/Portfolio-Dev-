@@ -124,12 +124,13 @@
 }
 
 #contact {
+    padding:128px 120px 200px 120px;
     grid-area: contact;
     background-image: url('../assets/Background_Intro.png');
     background-size: cover;
     min-height: 750px;
     .card-contact{
-        
+        margin: 0 auto;
         border-radius:8px;
         padding-inline:20px;
         align-items: center;
