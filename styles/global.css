@@ -48,6 +48,9 @@ main{
     "contact contact";
 }
 a{
+ text-decoration: none;
+}
+a:hover{
 
 }
 h1{
@@ -61,4 +64,11 @@ h2{
 h3{ 
     color: var(--base-gray-100);
     font:var(--title-sm);
+}
+
+header{
+    gap:8px;
+    justify-content: center;
+    text-align: center;
+    padding-block: 88px 56px ;
 }

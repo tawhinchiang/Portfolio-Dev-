@@ -1,7 +1,7 @@
 .container{
     max-width:1360px;
     margin-inline: auto;
-    /* padding-inline: 32px; */
+    
 }
 .grid{
     display: grid;
@@ -28,4 +28,10 @@
 .title-md{
     color: var(--base-gray-100);
     font:var(--title-md);
+}
+.red-main{
+    color:var(--principal-red)
+}
+.purple-main{
+    color: var(--principal-purple);
 }
