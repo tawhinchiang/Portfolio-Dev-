@@ -50,9 +50,7 @@ main{
 a{
  text-decoration: none;
 }
-a:hover{
 
-}
 h1{
     color:var(--base-gray-100);
     font: var(--title-lg);

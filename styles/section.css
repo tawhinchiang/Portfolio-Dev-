@@ -59,6 +59,7 @@
     }
 
 }
+
 #projects {
     grid-area: projects;
     padding: 72px 120px 144px 120px;
@@ -96,6 +97,14 @@
 
 
     }
+
+    a:hover {
+        .card-projects {
+            border-radius: 12px;
+            border: 0.1px solid var(--base-gray-300);
+        }
+    }
+
 }
 
 #services {
@@ -124,20 +133,32 @@
 }
 
 #contact {
-    padding:128px 120px 200px 120px;
+    padding: 128px 120px 200px 120px;
     grid-area: contact;
     background-image: url('../assets/Background_Intro.png');
     background-size: cover;
     min-height: 750px;
-    .card-contact{
+   & > div{
+    gap: 16px;
+   }
+    .card-contact {
+        
         margin: 0 auto;
-        border-radius:8px;
-        padding-inline:20px;
+        border-radius: 8px;
+        padding-inline: 20px;
         align-items: center;
         justify-content: space-between;
         width: 400px;
         height: 68px;
         background-color: var(--base-gray-400);
 
+    }
+    
+    a:hover{
+        .card-contact{
+           
+            border: 0.2px solid var(--principal-blue);
+
+        }
     }
 }
