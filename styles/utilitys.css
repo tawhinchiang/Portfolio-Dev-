@@ -1,7 +1,7 @@
 .container{
     max-width:70%;
     margin-inline: auto;
-    
+    justify-content: center;
 }
 .grid{
     display: grid;
