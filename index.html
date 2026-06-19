@@ -4,321 +4,645 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfólio de Tawhin Chiang, desenvolvedor full stack com experiência em suporte de TI, APIs REST, PL/SQL, Java, Flutter e interfaces web.">
-    <title>Tawhin Chiang | Desenvolvedor Full Stack</title>
+    <meta name="description" data-i18n-content="meta.description"
+        content="Portfólio de Tawhin Chiang, desenvolvedor Front-end Júnior com projetos em React, TypeScript, JavaScript, HTML e CSS.">
+    <meta name="theme-color" content="#0d0f14">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR" data-i18n-content="meta.socialLocale">
+    <meta property="og:title" content="Tawhin Chiang | Desenvolvedor Front-end" data-i18n-content="meta.title">
+    <meta property="og:description" data-i18n-content="meta.socialDescription"
+        content="Conheça meus projetos, experiências e competências em desenvolvimento Front-end.">
+    <meta property="og:url" content="https://tawhinchiang.github.io/Portfolio-Dev-/">
+    <meta property="og:image"
+        content="https://tawhinchiang.github.io/Portfolio-Dev-/assets/images/Thumbnail_Project-09.jpg">
+
+    <link rel="canonical" href="https://tawhinchiang.github.io/Portfolio-Dev-/">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&family=Archivo:wght@600;700;800&family=Asap:wght@400;500;700&family=Inconsolata:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inconsolata:wght@500;600&family=Maven+Pro:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+
+    <title>Tawhin Chiang | Desenvolvedor Front-end</title>
+
+    <script type="application/ld+json" data-structured-profile>
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Tawhin Chiang",
+            "jobTitle": "Desenvolvedor Front-end Júnior",
+            "url": "https://tawhinchiang.github.io/Portfolio-Dev-/",
+            "image": "https://tawhinchiang.github.io/Portfolio-Dev-/assets/profile.jpg",
+            "email": "mailto:tawhinchiang89@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Araguaína",
+                "addressRegion": "TO",
+                "addressCountry": "BR"
+            },
+            "sameAs": [
+                "https://github.com/tawhinchiang",
+                "https://www.linkedin.com/in/tawhin-chiang-532127228"
+            ],
+            "knowsAbout": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vite", "APIs REST"]
+        }
+    </script>
 </head>
 
 <body>
-    <main class="container">
-        <section id="profile">
-            <div class="hero">
-                <div class="hero-copy">
-                    <p class="eyebrow">
-                       Olá,Seja Bem Vindo. Meu nome é <span class="red-main">Tawhin Chiang</span>
+    <a class="skip-link" href="#main-content" data-i18n="accessibility.skipContent">Pular para o conteúdo</a>
+
+    <header class="site-header" data-site-header>
+        <div class="header-content">
+            <a class="brand" href="#profile" aria-label="Ir para o início"
+                data-i18n-aria-label="accessibility.goHome">
+                <span>TC</span><strong>.</strong>
+            </a>
+
+            <div class="header-actions">
+                <label class="language-selector">
+                    <span class="visually-hidden" data-i18n="language.label">Selecionar idioma</span>
+                    <select data-language-select aria-label="Selecionar idioma"
+                        data-i18n-aria-label="language.label">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </label>
+
+                <button class="icon-button theme-toggle" type="button" data-theme-toggle
+                    aria-label="Ativar tema claro">
+                    <span aria-hidden="true" data-theme-icon>☀</span>
+                </button>
+
+                <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false"
+                    aria-controls="primary-navigation">
+                    <span class="menu-toggle__label" data-i18n="navigation.menu">Menu</span>
+                    <span class="menu-toggle__icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <nav class="site-navigation" id="primary-navigation" aria-label="Navegação principal"
+                data-navigation data-i18n-aria-label="accessibility.mainNavigation">
+                <a href="#profile" data-nav-link data-i18n="navigation.home">Início</a>
+                <a href="#featured-projects" data-nav-link data-i18n="navigation.projects">Projetos</a>
+                <a href="#experience" data-nav-link data-i18n="navigation.experience">Experiência</a>
+                <a href="#skills" data-nav-link data-i18n="navigation.skills">Competências</a>
+                <a href="#about" data-nav-link data-i18n="navigation.about">Sobre</a>
+                <a href="#contact" data-nav-link data-i18n="navigation.contact">Contato</a>
+                <a class="button button-small button-primary" href="assets/curriculo-tawhin-chiang.pdf" download>
+                    <span data-i18n="navigation.resume">Currículo</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section" id="profile" data-page-section>
+            <div class="content-container hero-layout">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow"><span data-i18n="hero.greeting">Olá, meu nome é</span> <span
+                            class="eyebrow-name">Tawhin Chiang</span></p>
+                    <p class="availability"><span aria-hidden="true"></span><span
+                            data-i18n="hero.availability">Em busca de oportunidades Front-end</span></p>
+                    <h1><span data-i18n="hero.titleStart">Desenvolvedor</span> <span class="hero-title-highlight"
+                            data-i18n="hero.titleHighlight">Front-end Júnior</span></h1>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Crio interfaces modernas, responsivas e fáceis de usar com HTML, CSS, JavaScript, TypeScript e
+                        React. Minha experiência em suporte de TI me ajuda a compreender problemas reais e construir
+                        soluções claras e confiáveis.
                     </p>
-                    <h1>Desenvolvedor Full Stack com base sólida em suporte, integrações e sistemas reais.</h1>
-                    <p class="text-lg">
-                        Atuo com suporte de TI, análise de demandas, PL/SQL, APIs REST, Java e desenvolvimento de
-                        interfaces. Transformo necessidades de negócio em soluções funcionais, bem estruturadas e
-                        pensadas para evoluir com manutenção simples.
-                    </p>
+
+                    <ul class="hero-facts" aria-label="Informações principais"
+                        data-i18n-aria-label="accessibility.heroFacts">
+                        <li data-i18n="hero.location">Araguaína, TO</li>
+                        <li data-i18n="hero.stack">React e TypeScript</li>
+                        <li data-i18n="hero.responsive">Interfaces responsivas</li>
+                    </ul>
 
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#projects">Ver projetos</a>
-                        <a class="button button-secondary" href="#contact">Entrar em contato</a>
+                        <a class="button button-primary" href="#featured-projects"
+                            data-i18n="hero.viewProjects">Ver projetos</a>
+                        <a class="button button-secondary" href="assets/curriculo-tawhin-chiang.pdf" download>
+                            <span data-i18n="hero.downloadResume">Baixar currículo</span>
+                        </a>
+                        <a class="text-link" href="#contact"><span data-i18n="hero.contact">Entrar em contato</span>
+                            <span aria-hidden="true">→</span></a>
                     </div>
-
-                    <ul class="tag-list" aria-label="Tecnologias principais">
-                        <li class="tag-card">
-                            <img src="assets/icons/GitHub.svg" alt="" aria-hidden="true">
-                            <span>GitHub</span>
-                        </li>
-                        <li class="tag-card">
-                            <img src="assets/icons/HTML.png" alt="" aria-hidden="true">
-                            <span>HTML</span>
-                        </li>
-                        <li class="tag-card">
-                            <img src="assets/icons/CSS.png" alt="" aria-hidden="true">
-                            <span>CSS</span>
-                        </li>
-                        <li class="tag-card">
-                            <img src="assets/icons/JavaScript.png" alt="" aria-hidden="true">
-                            <span>JavaScript</span>
-                        </li>
-                        <li class="tag-card">
-                            <img src="assets/icons/React.png" alt="" aria-hidden="true">
-                            <span>React</span>
-                        </li>
-                        <li class="tag-card">
-                            <img src="assets/icons/Node.js.png" alt="" aria-hidden="true">
-                            <span>Node.js</span>
-                        </li>
-                    </ul>
                 </div>
 
-                <aside class="hero-panel">
-                    <div class="profile_img">
-                        <img src="assets/profile.jpg" alt="Foto de perfil de Tawhin Chiang">
+                <aside class="profile-card" data-reveal>
+                    <div class="profile-image">
+                        <img src="assets/profile.jpg" width="288" height="288" alt="Foto de perfil de Tawhin Chiang"
+                            data-i18n-alt="images.profile" fetchpriority="high">
                     </div>
-
-                    <div class="hero-summary">
-                        <p class="text-md">
-                            Analista de Suporte de TI na Prodata Informática, Formado em Análises e Desenvolvimento de
-                            Sistemas.
-                        </p>
-                        <ul class="summary-list">
-                            <li>Experiência com suporte técnico e sustentação de sistemas.</li>
-                            <li>Integrações com APIs REST, PL/SQL e relatórios com Jaspersoft Studio.</li>
-                            <li>Estudos contínuos em front-end e Aplicações full stack.</li>
-                        </ul>
+                    <div>
+                        <p class="profile-card__label" data-i18n="hero.profileLabel">Perfil profissional</p>
+                        <h2 data-i18n="hero.profileTitle">Front-end com visão de produto e suporte</h2>
+                    </div>
+                    <ul class="check-list">
+                        <li data-i18n="hero.profileItemOne">Projetos com React, TypeScript e Vite</li>
+                        <li data-i18n="hero.profileItemTwo">Consumo de APIs REST e organização de dados</li>
+                        <li data-i18n="hero.profileItemThree">Experiência com sistemas usados em produção</li>
+                    </ul>
+                    <div class="profile-links">
+                        <a href="https://github.com/tawhinchiang" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/tawhin-chiang-532127228" target="_blank"
+                            rel="noreferrer">LinkedIn</a>
                     </div>
                 </aside>
             </div>
-
-            <div class="scroll-indicator">
-                <a href="#about" aria-label="Ir para a seção sobre">
-                    <img src="assets/icons/CaretDoubleDown.png" alt="" aria-hidden="true">
-                </a>
-            </div>
         </section>
 
-        <section id="about">
-            <header class="section-header">
-                <h2 class="red-main">Sobre mim</h2>
-                <p class="title-md">Minha trajetória une atendimento, análise técnica e desenvolvimento.</p>
-            </header>
+        <section class="section section-contrast" id="featured-projects" data-page-section>
+            <div class="content-container">
+                <header class="section-heading" data-reveal>
+                    <div>
+                        <p class="section-kicker" data-i18n="featured.kicker">Projetos em destaque</p>
+                        <h2 data-i18n="featured.title">Trabalhos que demonstram minha evolução</h2>
+                    </div>
+                    <a class="text-link" href="#all-projects"><span data-i18n="featured.viewAll">Ver todos os projetos</span>
+                        <span aria-hidden="true">↓</span></a>
+                </header>
 
-            <div class="about-grid">
-                <article class="about-card">
-                    <h3>Visão profissional</h3>
-                    <p class="text-sm">
-                        Tenho experiência em suporte técnico, análise de problemas e sustentação de sistemas, o que me
-                        ajuda a desenvolver soluções com mais clareza sobre operação, manutenção e impacto real no dia a
-                        dia dos usuários.
-                    </p>
-                </article>
-
-                <article class="about-card">
-                    <h3>Stack e atuação</h3>
-                    <p class="text-sm">
-                        Trabalho com PL/SQL e  Java em Relátorios JasperSoft Studio e também venho
-                        aprofundando meu conhecimento em  HTML, CSS,JavaScript, PL/SQL,Node.js  e React para desenvolvimento mobile e interfaces modernas.
-                    </p>
-                </article>
-
-                <article class="about-card">
-                    <h3>Objetivo</h3>
-                    <p class="text-sm">
-                        Busco crescer como desenvolvedor, participar de projetos inovadores e agregar valor por meio da
-                        tecnologia, sempre equilibrando código limpo, boa experiência de uso e fácil manutenção.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section id="projects">
-            <header class="section-header">
-                <h2 class="red-main">Projetos em destaque</h2>
-                <p class="title-md">Projetos que mostram minha evolução com interfaces, páginas web e produtos digitais.</p>
-            </header>
-
-            <div class="projects-grid">
-                <a class="project-link" href="https://github.com/tawhinchiang/Travelgram" target="_blank"
-                    rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-01.png"
-                            alt="Prévia do projeto Travelgram com galeria de viagens">
-                        <div>
-                            <h3>Travelgram</h3>
-                            <p class="text-sm">Rede social com foco em registros visuais de viagens e organização de
-                                conteúdo por experiência.</p>
+                <div class="featured-grid">
+                    <article class="featured-card" data-reveal>
+                        <img src="assets/images/Thumbnail_Project-09.jpg" width="1000" height="436"
+                            alt="Página inicial da Panificadora Bom Sabor" data-i18n-alt="images.panificadora"
+                            loading="lazy">
+                        <div class="featured-card__body">
+                            <div class="project-meta">
+                                <span>React</span><span>Vite</span><span data-i18n="featured.responsiveTag">Responsivo</span>
+                            </div>
+                            <h3>Panificadora Bom Sabor</h3>
+                            <p data-i18n="featured.panificadoraSummary">Landing page para apresentar produtos, fortalecer a identidade local e facilitar o contato
+                                com clientes.</p>
+                            <div class="project-actions">
+                                <a class="button button-small button-primary"
+                                    href="https://panificadora-landing-completo.vercel.app/" target="_blank"
+                                    rel="noreferrer" data-i18n="featured.viewProject">Ver projeto</a>
+                                <button class="button button-small button-ghost" type="button"
+                                    data-project-dialog="panificadora" data-i18n="featured.caseStudy">Estudo de caso</button>
+                            </div>
                         </div>
                     </article>
-                </a>
 
-                <a class="project-link" href="https://github.com/tawhinchiang/Portal-de-Noticias" target="_blank"
-                    rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-02.png"
-                            alt="Prévia do projeto Tech News com destaque de notícias de tecnologia">
-                        <div>
-                            <h3>Tech News</h3>
-                            <p class="text-sm">Homepage de portal de notícias com hierarquia visual, destaques editoriais
-                                e organização de conteúdo.</p>
+                    <article class="featured-card" data-reveal>
+                        <img src="assets/images/Thumbnail_Project-08.png" width="1266" height="866"
+                            alt="Interface do jogo de adivinhação" data-i18n-alt="images.guessing" loading="lazy">
+                        <div class="featured-card__body">
+                            <div class="project-meta">
+                                <span>React</span><span>TypeScript</span><span>Vite</span>
+                            </div>
+                            <h3 data-i18n="projects.guessingTitle">Jogo de Adivinhação</h3>
+                            <p data-i18n="featured.guessingSummary">Jogo de palavras que trabalha componentes, estados da interface e regras de interação com
+                                tipagem estática.</p>
+                            <div class="project-actions">
+                                <a class="button button-small button-primary" href="https://github.com/tawhinchiang/adivinhe"
+                                    target="_blank" rel="noreferrer" data-i18n="featured.sourceCode">Código no GitHub</a>
+                                <button class="button button-small button-ghost" type="button"
+                                    data-project-dialog="adivinhe" data-i18n="featured.caseStudy">Estudo de caso</button>
+                            </div>
                         </div>
                     </article>
-                </a>
 
-                <a class="project-link" href="https://github.com/tawhinchiang/pagina_receitas" target="_blank"
-                    rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-03.png"
-                            alt="Prévia do projeto Página de receita com layout editorial">
-                        <div>
-                            <h3>Página de receita</h3>
-                            <p class="text-sm">Página com passo a passo de receita, foco em leitura fluida e distribuição
-                                clara das informações.</p>
-                        </div>
-                    </article>
-                </a>
-
-                <a class="project-link" href="https://github.com/tawhinchiang/Projeto-Zingen" target="_blank"
-                    rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-04.png"
-                            alt="Prévia do projeto Zingen com landing page de aplicativo">
-                        <div>
-                            <h3>Zingen</h3>
-                            <p class="text-sm">Landing page responsiva para aplicativo de karaokê, com foco em conversão,
-                                seções de produto e identidade visual.</p>
-                        </div>
-                    </article>
-                </a>
-
-                <a class="project-link" href="https://github.com/tawhinchiang/refund-template-main" target="_blank"
-                    rel="noreferrer">
-
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-05.png"
-                            alt="Prévia do projeto Refund com fluxo de reembolso">
-                        <div>
-                            <h3>Refund</h3>
-                            <p class="text-sm">Sistema para solicitação e acompanhamento de reembolso, pensado para fluxo
-                                claro e organização de estados.</p>
-                        </div>
-                    </article>
-                </a>
-                <a class="project-link" href="https://github.com/tawhinchiang/HairDay" target="_blank"
-                    rel="noreferrer">
-
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-07.png"
-                            alt="Prévia do projeto HaairDay com fluxo de reembolso">
-                        <div>
+                    <article class="featured-card" data-reveal>
+                        <img src="assets/images/Thumbnail_Project-07.png" width="1440" height="900"
+                            alt="Interface de agendamentos do HairDay" data-i18n-alt="images.hairday" loading="lazy">
+                        <div class="featured-card__body">
+                            <div class="project-meta">
+                                <span>JavaScript</span><span>API REST</span><span data-i18n="featured.modulesTag">Módulos</span>
+                            </div>
                             <h3>HairDay</h3>
-                            <p class="text-sm">Aplicativo web para estudos de consumo de APIs, com listagem, criação e exclusão de agendamentos, organizado em módulos e versionado.</p>
+                            <p data-i18n="featured.hairdaySummary">Aplicação web para listar, criar e excluir agendamentos por meio de uma API organizada em
+                                módulos.</p>
+                            <div class="project-actions">
+                                <a class="button button-small button-primary" href="https://github.com/tawhinchiang/HairDay"
+                                    target="_blank" rel="noreferrer" data-i18n="featured.sourceCode">Código no GitHub</a>
+                                <button class="button button-small button-ghost" type="button"
+                                    data-project-dialog="hairday" data-i18n="featured.caseStudy">Estudo de caso</button>
+                            </div>
                         </div>
                     </article>
-                </a>
-
-                <a class="project-link" href="https://github.com/tawhinchiang" target="_blank" rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-06.png"
-                            alt="Prévia do projeto Página de turismo sobre Busan">
-                        <div>
-                            <h3>Página de turismo</h3>
-                            <p class="text-sm">Página informativa com foco em destino turístico, hierarquia de conteúdo e
-                                apresentação visual.</p>
-                        </div>
-                    </article>
-                </a>
-                <a class="project-link" href="https://github.com/tawhinchiang/adivinhe" target="_blank" rel="noreferrer">
-                    <article class="card-projects">
-                        <img src="assets/images/Thumbnail_Project-08.png"
-                            alt="Prévia do projeto Adivinhe">
-                        <div>
-                            <h3>Jogo de Advinhação</h3>
-                            <p class="text-sm">Jogo simples de adivinhação de palavras desenvolvido com React, TypeScript e Vite. </p>
-                        </div>
-                    </article>
-                </a>
+                </div>
             </div>
         </section>
 
-        <section id="services">
-            <header class="section-header">
-                <h2 class="red-main">Como posso contribuir</h2>
-                <p class="title-md">Serviços e competências que conectam suporte, desenvolvimento e evolução de produto.</p>
-            </header>
+        <section class="section" id="experience" data-page-section>
+            <div class="content-container split-section">
+                <header class="section-heading section-heading--stacked" data-reveal>
+                    <p class="section-kicker" data-i18n="experience.kicker">Experiência</p>
+                    <h2 data-i18n="experience.title">Vivência técnica que complementa o Front-end</h2>
+                    <p data-i18n="experience.description">Minha trajetória em suporte e sistemas fortaleceu minha análise, comunicação e capacidade de
+                        resolver problemas.</p>
+                </header>
 
-            <div class="services-grid">
-                <article class="card-services">
-                    <img src="assets/icons/web.png" alt="" aria-hidden="true">
-                    <div class="card-copy">
-                        <h3>Interfaces web</h3>
-                        <p class="text-sm">Criação de páginas e interfaces responsivas com foco em clareza, boa experiência
-                            de uso e manutenção consistente.</p>
-                    </div>
-                </article>
+                <div class="timeline">
+                    <article class="timeline-item" data-reveal>
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-card__header">
+                                <div>
+                                    <p class="timeline-period" data-i18n="experience.currentPeriod">Fevereiro de 2025 — atual</p>
+                                    <h3 data-i18n="experience.currentRole">Analista de Suporte de TI</h3>
+                                    <p data-i18n="experience.currentCompany">Prodata Informática · Araguaína, TO</p>
+                                </div>
+                                <span class="status-badge" data-i18n="experience.currentBadge">Atual</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li data-i18n="experience.currentItemOne">Sustentação de sistemas, análise de demandas e atendimento técnico.</li>
+                                <li data-i18n="experience.currentItemTwo">Investigação de problemas, inconsistências e regras de negócio.</li>
+                                <li data-i18n="experience.currentItemThree">Consultas SQL/PLSQL, APIs REST, Java e relatórios com Jaspersoft Studio.</li>
+                            </ul>
+                        </div>
+                    </article>
 
-                <article class="card-services">
-                    <img src="assets/icons/api.png" alt="" aria-hidden="true">
-                    <div class="card-copy">
-                        <h3>Integrações e dados</h3>
-                        <p class="text-sm">Atuação com APIs REST, consultas SQL, PL/SQL e integração entre front-end e
-                            back-end para soluções mais completas.</p>
-                    </div>
-                </article>
-
-                <article class="card-services">
-                    <img src="assets/icons/Infinity.png" alt="" aria-hidden="true">
-                    <div class="card-copy">
-                        <h3>Sustentação e melhoria contínua</h3>
-                        <p class="text-sm">Experiência com suporte de TI, análise de demandas e evolução de sistemas já em
-                            produção, olhando para estabilidade e eficiência.</p>
-                    </div>
-                </article>
+                    <article class="timeline-item" data-reveal>
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-card__header">
+                                <div>
+                                    <p class="timeline-period" data-i18n="experience.previousPeriod">Fevereiro de 2024 — dezembro de 2024</p>
+                                    <h3 data-i18n="experience.previousRole">Trainee Mobile Flutter</h3>
+                                    <p data-i18n="experience.previousCompany">Kothe S.A. · Araguaína, TO</p>
+                                </div>
+                            </div>
+                            <ul class="bullet-list">
+                                <li data-i18n="experience.previousItemOne">Apoio na criação e manutenção de telas mobile com Flutter e Dart.</li>
+                                <li data-i18n="experience.previousItemTwo">Construção de interfaces responsivas, funcionais e organizadas.</li>
+                                <li data-i18n="experience.previousItemThree">Prática com lógica, organização de código e experiência do usuário.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <header class="section-header">
-                <h2 class="purple-main">Contato</h2>
-                <p class="title-md">Vamos conversar sobre projetos, oportunidades e tecnologia.</p>
-                <p class="text-sm">Se você busca alguém com base técnica, visão prática e vontade constante de evoluir,
-                    fico à disposição para trocar uma ideia.</p>
-            </header>
+        <section class="section section-contrast" id="skills" data-page-section>
+            <div class="content-container">
+                <header class="section-heading section-heading--center" data-reveal>
+                    <p class="section-kicker" data-i18n="skills.kicker">Competências</p>
+                    <h2 data-i18n="skills.title">Tecnologias organizadas por contexto</h2>
+                    <p data-i18n="skills.description">Use as abas para entender onde cada conhecimento aparece na minha atuação.</p>
+                </header>
 
-            <div class="contact-list">
-                <a href="https://www.linkedin.com/in/tawhin-chiang-532127228" target="_blank" rel="noreferrer">
-                    <div class="card-contact">
-                        <div class="contact-copy">
-                            <img src="assets/icons/linkedin.png" alt="" aria-hidden="true">
-                            <span class="text-md">LinkedIn</span>
-                        </div>
-                        <img src="assets/icons/arrow.png" alt="" aria-hidden="true">
+                <div class="skills-tabs" data-tabs data-reveal>
+                    <div class="tabs-controls" role="tablist" aria-label="Categorias de competências"
+                        data-i18n-aria-label="accessibility.skillCategories">
+                        <button type="button" role="tab" id="tab-front-end" aria-controls="panel-front-end"
+                            aria-selected="true" data-tab="front-end" data-i18n="skills.frontEndTab">Front-end</button>
+                        <button type="button" role="tab" id="tab-tools" aria-controls="panel-tools"
+                            aria-selected="false" data-tab="tools" tabindex="-1" data-i18n="skills.toolsTab">Ferramentas</button>
+                        <button type="button" role="tab" id="tab-complementary" aria-controls="panel-complementary"
+                            aria-selected="false" data-tab="complementary" tabindex="-1"
+                            data-i18n="skills.complementaryTab">Complementares</button>
                     </div>
-                </a>
 
-                <a href="https://www.instagram.com/yochiang.tawhin/" target="_blank" rel="noreferrer">
-                    <div class="card-contact">
-                        <div class="contact-copy">
-                            <img src="assets/icons/InstagramLogo.png" alt="" aria-hidden="true">
-                            <span class="text-md">Instagram</span>
+                    <div class="skill-panel" id="panel-front-end" role="tabpanel" aria-labelledby="tab-front-end"
+                        data-tab-panel="front-end">
+                        <div class="skill-intro">
+                            <h3 data-i18n="skills.frontEndTitle">Desenvolvimento de interfaces</h3>
+                            <p data-i18n="skills.frontEndDescription">Conhecimentos usados para construir páginas claras, responsivas e interativas.</p>
                         </div>
-                        <img src="assets/icons/arrow.png" alt="" aria-hidden="true">
+                        <ul class="skill-grid">
+                            <li><strong>HTML5</strong><span data-i18n="skills.html">Estrutura semântica e acessível</span></li>
+                            <li><strong>CSS3</strong><span data-i18n="skills.css">Layouts responsivos, Grid e Flexbox</span></li>
+                            <li><strong>JavaScript</strong><span data-i18n="skills.javascript">Interações e manipulação do DOM</span></li>
+                            <li><strong>React</strong><span data-i18n="skills.react">Componentes e organização de interfaces</span></li>
+                            <li><strong>TypeScript</strong><span data-i18n="skills.typescript">Tipagem e segurança no desenvolvimento</span></li>
+                            <li><strong>Vite</strong><span data-i18n="skills.vite">Ambiente moderno de desenvolvimento</span></li>
+                        </ul>
                     </div>
-                </a>
 
-                <a href="https://github.com/tawhinchiang" target="_blank" rel="noreferrer">
-                    <div class="card-contact">
-                        <div class="contact-copy">
-                            <img src="assets/icons/GithubLogo.png" alt="" aria-hidden="true">
-                            <span class="text-md">GitHub</span>
+                    <div class="skill-panel" id="panel-tools" role="tabpanel" aria-labelledby="tab-tools"
+                        data-tab-panel="tools">
+                        <div class="skill-intro">
+                            <h3 data-i18n="skills.toolsTitle">Fluxo de desenvolvimento</h3>
+                            <p data-i18n="skills.toolsDescription">Ferramentas e práticas usadas para organizar, integrar e publicar projetos.</p>
                         </div>
-                        <img src="assets/icons/arrow.png" alt="" aria-hidden="true">
+                        <ul class="skill-grid">
+                            <li><strong>Git</strong><span data-i18n="skills.git">Histórico e controle de versões</span></li>
+                            <li><strong>GitHub</strong><span data-i18n="skills.github">Repositórios e publicação de projetos</span></li>
+                            <li><strong>APIs REST</strong><span data-i18n="skills.api">Consumo e apresentação de dados</span></li>
+                            <li><strong data-i18n="skills.responsivenessLabel">Responsividade</strong><span data-i18n="skills.responsiveness">Experiência consistente entre telas</span></li>
+                            <li><strong data-i18n="skills.accessibilityLabel">Acessibilidade</strong><span data-i18n="skills.accessibility">Semântica, foco e navegação por teclado</span></li>
+                            <li><strong>Clean Code</strong><span data-i18n="skills.cleanCode">Nomes claros e responsabilidades pequenas</span></li>
+                        </ul>
                     </div>
-                </a>
 
-                <a href="mailto:tawhinchiang89@gmail.com">
-                    <div class="card-contact">
-                        <div class="contact-copy">
-                            <img src="assets/icons/EnvelopeSimple.png" alt="" aria-hidden="true">
-                            <span class="text-md">E-mail</span>
+                    <div class="skill-panel" id="panel-complementary" role="tabpanel"
+                        aria-labelledby="tab-complementary" data-tab-panel="complementary">
+                        <div class="skill-intro">
+                            <h3 data-i18n="skills.complementaryTitle">Visão complementar de sistemas</h3>
+                            <p data-i18n="skills.complementaryDescription">Conhecimentos profissionais que ajudam na integração e na análise de problemas reais.</p>
                         </div>
-                        <img src="assets/icons/arrow.png" alt="" aria-hidden="true">
+                        <ul class="skill-grid">
+                            <li><strong>SQL e PL/SQL</strong><span data-i18n="skills.sql">Consultas, funções e análise de dados</span></li>
+                            <li><strong>Java</strong><span data-i18n="skills.java">Manutenção de relatórios corporativos</span></li>
+                            <li><strong>Jaspersoft Studio</strong><span data-i18n="skills.jaspersoft">Criação e ajuste de relatórios</span></li>
+                            <li><strong>Flutter e Dart</strong><span data-i18n="skills.flutter">Construção de telas mobile</span></li>
+                            <li><strong data-i18n="skills.supportLabel">Suporte de TI</strong><span data-i18n="skills.support">Diagnóstico e comunicação com usuários</span></li>
+                            <li><strong data-i18n="skills.businessRulesLabel">Regras de negócio</strong><span data-i18n="skills.businessRules">Análise de processos e inconsistências</span></li>
+                        </ul>
                     </div>
-                </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="all-projects">
+            <div class="content-container">
+                <header class="section-heading section-heading--center" data-reveal>
+                    <p class="section-kicker" data-i18n="projects.kicker">Portfólio completo</p>
+                    <h2 data-i18n="projects.title">Explore os projetos por tecnologia</h2>
+                    <p data-i18n="projects.description">Os filtros ajudam a encontrar rapidamente os trabalhos mais relevantes para cada vaga.</p>
+                </header>
+
+                <div class="project-filters" aria-label="Filtrar projetos" data-project-filters
+                    data-i18n-aria-label="accessibility.projectFilters">
+                    <button class="is-active" type="button" data-project-filter="all" aria-pressed="true"
+                        data-i18n="projects.all">Todos</button>
+                    <button type="button" data-project-filter="react" aria-pressed="false">React</button>
+                    <button type="button" data-project-filter="javascript" aria-pressed="false">JavaScript</button>
+                    <button type="button" data-project-filter="html-css" aria-pressed="false"
+                        data-i18n="projects.htmlCss">HTML e CSS</button>
+                </div>
+
+                <p class="filter-status" data-filter-status aria-live="polite"></p>
+
+                <div class="projects-grid" data-project-list>
+                    <article class="project-card" data-project-card data-categories="react html-css">
+                        <img src="assets/images/Thumbnail_Project-09.jpg" width="1000" height="436"
+                            alt="Página inicial da Panificadora Bom Sabor" data-i18n-alt="images.panificadora"
+                            loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>React</span><span>Vite</span></div>
+                            <h3>Panificadora Bom Sabor</h3>
+                            <p data-i18n="projects.panificadoraSummary">Landing page responsiva para apresentar produtos e facilitar o contato com clientes.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://panificadora-landing-completo.vercel.app/"
+                                    target="_blank" rel="noreferrer"><span data-i18n="featured.viewProject">Ver projeto</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="panificadora"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="react javascript">
+                        <img src="assets/images/Thumbnail_Project-08.png" width="1266" height="866"
+                            alt="Interface do jogo de adivinhação" data-i18n-alt="images.guessing" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>React</span><span>TypeScript</span></div>
+                            <h3 data-i18n="projects.guessingTitle">Jogo de Adivinhação</h3>
+                            <p data-i18n="projects.guessingSummary">Jogo de palavras desenvolvido com componentes, estados e tipagem estática.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/adivinhe" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="adivinhe"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="javascript html-css">
+                        <img src="assets/images/Thumbnail_Project-07.png" width="1440" height="900"
+                            alt="Interface de agendamentos do HairDay" data-i18n-alt="images.hairday" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>JavaScript</span><span>API REST</span></div>
+                            <h3>HairDay</h3>
+                            <p data-i18n="projects.hairdaySummary">Aplicação web para listar, criar e excluir agendamentos por meio de uma API.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/HairDay" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="hairday"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="html-css">
+                        <img src="assets/images/Thumbnail_Project-04.png" width="556" height="284"
+                            alt="Landing page do aplicativo Zingen" data-i18n-alt="images.zingen" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>HTML</span><span>CSS</span></div>
+                            <h3>Zingen</h3>
+                            <p data-i18n="projects.zingenSummary">Landing page responsiva para apresentar um aplicativo de karaokê.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/Projeto-Zingen" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="zingen"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="javascript html-css">
+                        <img src="assets/images/Thumbnail_Project-05.png" width="556" height="284"
+                            alt="Interface do sistema de reembolso Refund" data-i18n-alt="images.refund" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>JavaScript</span><span>CSS</span></div>
+                            <h3>Refund</h3>
+                            <p data-i18n="projects.refundSummary">Interface para organizar solicitações e acompanhar informações de reembolso.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/refund-template-main"
+                                    target="_blank" rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="refund"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="html-css">
+                        <img src="assets/images/Thumbnail_Project-01.png" width="556" height="284"
+                            alt="Galeria de viagens do Travelgram" data-i18n-alt="images.travelgram" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>HTML</span><span>CSS</span></div>
+                            <h3>Travelgram</h3>
+                            <p data-i18n="projects.travelgramSummary">Galeria visual de viagens com organização responsiva de perfil e conteúdo.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/Travelgram" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="travelgram"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="html-css">
+                        <img src="assets/images/Thumbnail_Project-02.png" width="556" height="284"
+                            alt="Página inicial do portal Tech News" data-i18n-alt="images.techNews" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>HTML</span><span>CSS Grid</span></div>
+                            <h3>Tech News</h3>
+                            <p data-i18n="projects.techNewsSummary">Homepage editorial com hierarquia visual e organização de notícias.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/Portal-de-Noticias"
+                                    target="_blank" rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="tech-news"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="html-css">
+                        <img src="assets/images/Thumbnail_Project-03.png" width="556" height="284"
+                            alt="Página de receita com organização editorial" data-i18n-alt="images.recipe" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>HTML</span><span>CSS</span></div>
+                            <h3 data-i18n="projects.recipeTitle">Página de receita</h3>
+                            <p data-i18n="projects.recipeSummary">Página semântica com foco em leitura, hierarquia e apresentação do passo a passo.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/pagina_receitas" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="receita"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project-card data-categories="html-css">
+                        <img src="assets/images/Thumbnail_Project-06.png" width="556" height="284"
+                            alt="Página de turismo sobre Busan" data-i18n-alt="images.tourism" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>HTML</span><span>CSS</span></div>
+                            <h3 data-i18n="projects.tourismTitle">Página de turismo</h3>
+                            <p data-i18n="projects.tourismSummary">Página informativa sobre um destino turístico com conteúdo visual bem organizado.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang" target="_blank"
+                                    rel="noreferrer"><span data-i18n="projects.viewGithub">Ver GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="turismo"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="show-more-container">
+                    <button class="button button-secondary" type="button" data-show-more
+                        data-i18n="projects.showMore">Ver mais projetos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-contrast" id="about" data-page-section>
+            <div class="content-container about-layout">
+                <div class="about-copy" data-reveal>
+                    <p class="section-kicker" data-i18n="about.kicker">Sobre e formação</p>
+                    <h2 data-i18n="about.title">Aprendizado contínuo com visão prática</h2>
+                    <p data-i18n="about.paragraphOne">Minha experiência começou no suporte e no desenvolvimento mobile. Hoje direciono meus estudos e
+                        projetos para o Front-end, unindo atenção aos usuários, análise técnica e construção de
+                        interfaces.</p>
+                    <p data-i18n="about.paragraphTwo">Busco uma oportunidade como Desenvolvedor Front-end Júnior para colaborar com produtos reais,
+                        aprender com o time e evoluir com boas práticas.</p>
+
+                    <div class="about-actions">
+                        <a class="button button-primary" href="assets/curriculo-tawhin-chiang.pdf" download>
+                            <span data-i18n="hero.downloadResume">Baixar currículo</span>
+                        </a>
+                        <a class="button button-ghost" href="https://github.com/tawhinchiang" target="_blank"
+                            rel="noreferrer" data-i18n="about.githubButton">Conhecer meu GitHub</a>
+                    </div>
+                </div>
+
+                <div class="education-list">
+                    <article class="education-card" data-reveal>
+                        <p class="education-type" data-i18n="about.graduation">Graduação</p>
+                        <h3 data-i18n="about.degree">Análise e Desenvolvimento de Sistemas</h3>
+                        <p>UNOPAR</p>
+                        <span data-i18n="about.graduationPeriod">Janeiro de 2024 — conclusão prevista em julho de 2026</span>
+                    </article>
+                    <article class="education-card" data-reveal>
+                        <p class="education-type" data-i18n="about.technicalCourse">Curso técnico</p>
+                        <h3 data-i18n="about.technicalDegree">Tecnologia da Informação</h3>
+                        <p data-i18n="about.technicalInstitution">Instituto Federal do Tocantins — IFTO</p>
+                        <span data-i18n="about.technicalPeriod">Janeiro de 2019 — janeiro de 2021</span>
+                    </article>
+                    <article class="education-card" data-reveal>
+                        <p class="education-type" data-i18n="about.strengths">Diferenciais</p>
+                        <ul class="bullet-list">
+                            <li data-i18n="about.strengthOne">Resolução de problemas e comunicação com usuários</li>
+                            <li data-i18n="about.strengthTwo">Organização, responsabilidade e aprendizado contínuo</li>
+                            <li data-i18n="about.strengthThree">Visão de sistemas, dados e regras de negócio</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" data-page-section>
+            <div class="content-container contact-layout">
+                <div class="contact-copy" data-reveal>
+                    <p class="section-kicker" data-i18n="contact.kicker">Contato</p>
+                    <h2 data-i18n="contact.title">Vamos conversar sobre sua oportunidade?</h2>
+                    <p data-i18n="contact.description">Estou disponível para conversar sobre vagas Front-end Júnior, projetos e desafios onde eu possa
+                        contribuir e continuar evoluindo.</p>
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="#" target="_blank" rel="noreferrer"
+                            data-whatsapp-link data-i18n="contact.whatsappButton">Falar pelo WhatsApp</a>
+                        <button class="button button-ghost" type="button" data-copy-email
+                            data-email="tawhinchiang89@gmail.com" data-i18n="contact.copyEmail">Copiar e-mail</button>
+                    </div>
+                </div>
+
+                <div class="contact-links" data-reveal>
+                    <a href="#" target="_blank" rel="noreferrer" data-whatsapp-link>
+                        <span><strong data-i18n="contact.whatsappLabel">WhatsApp</strong><small
+                                data-i18n="contact.whatsappDescription">Enviar mensagem pronta</small></span>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                    <a href="mailto:tawhinchiang89@gmail.com">
+                        <span><strong data-i18n="contact.emailLabel">E-mail</strong><small>tawhinchiang89@gmail.com</small></span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tawhin-chiang-532127228" target="_blank" rel="noreferrer">
+                        <span><strong>LinkedIn</strong><small data-i18n="contact.linkedinDescription">Perfil profissional</small></span>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                    <a href="https://github.com/tawhinchiang" target="_blank" rel="noreferrer">
+                        <span><strong>GitHub</strong><small data-i18n="contact.githubDescription">Repositórios e projetos</small></span>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="content-container">
+            <p data-i18n="footer.developedBy">Desenvolvido por Tawhin Chiang.</p>
+            <a href="#profile"><span data-i18n="footer.backToTop">Voltar ao início</span> <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+
+    <dialog class="project-dialog" data-project-modal aria-labelledby="project-dialog-title">
+        <div class="dialog-content">
+            <button class="dialog-close" type="button" data-dialog-close aria-label="Fechar estudo de caso"
+                data-i18n-aria-label="accessibility.closeCaseStudy">×</button>
+            <p class="section-kicker" data-i18n="dialog.kicker">Estudo de caso</p>
+            <h2 id="project-dialog-title" data-dialog-title></h2>
+            <div class="dialog-technologies" data-dialog-technologies></div>
+            <div class="dialog-section">
+                <h3 data-i18n="dialog.problem">Problema</h3>
+                <p data-dialog-problem></p>
+            </div>
+            <div class="dialog-section">
+                <h3 data-i18n="dialog.solution">Solução</h3>
+                <p data-dialog-solution></p>
+            </div>
+            <div class="dialog-section">
+                <h3 data-i18n="dialog.learning">Aprendizados</h3>
+                <p data-dialog-learning></p>
+            </div>
+            <div class="project-actions" data-dialog-actions></div>
+        </div>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <script src="scripts/translations.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>
