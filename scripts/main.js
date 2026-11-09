@@ -71,6 +71,13 @@ const projectLinks = {
             url: "https://github.com/tawhinchiang",
             primary: true
         }
+    ],
+    "barbearia-saas": [
+        {
+            labelKey: "featured.sourceCode",
+            url: "https://github.com/tawhinchiang/BARBEARIASAAS",
+            primary: true
+        }
     ]
 };
 

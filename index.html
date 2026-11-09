@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" data-i18n-content="meta.description"
-        content="Portfólio de Tawhin Chiang, desenvolvedor Front-end Júnior com projetos em React, TypeScript, JavaScript, HTML e CSS.">
+        content="Portfólio de Tawhin Chiang, desenvolvedor Full Stack com projetos em React, TypeScript, Node.js, JavaScript, HTML e CSS.">
     <meta name="theme-color" content="#0d0f14">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR" data-i18n-content="meta.socialLocale">
-    <meta property="og:title" content="Tawhin Chiang | Desenvolvedor Front-end" data-i18n-content="meta.title">
+    <meta property="og:title" content="Tawhin Chiang | Desenvolvedor Full Stack" data-i18n-content="meta.title">
     <meta property="og:description" data-i18n-content="meta.socialDescription"
-        content="Conheça meus projetos, experiências e competências em desenvolvimento Front-end.">
+        content="Conheça meus projetos, experiências e competências em desenvolvimento Full Stack.">
     <meta property="og:url" content="https://tawhinchiang.github.io/Portfolio-Dev-/">
     <meta property="og:image"
-        content="https://tawhinchiang.github.io/Portfolio-Dev-/assets/images/Thumbnail_Project-09.jpg">
+        content="https://tawhinchiang.github.io/Portfolio-Dev-/assets/images/Thumbnail_Project-10.svg">
 
     <link rel="canonical" href="https://tawhinchiang.github.io/Portfolio-Dev-/">
     <link rel="icon" href="favicon.ico" sizes="any">
@@ -26,14 +26,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 
-    <title>Tawhin Chiang | Desenvolvedor Front-end</title>
+    <title>Tawhin Chiang | Desenvolvedor Full Stack</title>
 
     <script type="application/ld+json" data-structured-profile>
         {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Tawhin Chiang",
-            "jobTitle": "Desenvolvedor Front-end Júnior",
+            "jobTitle": "Desenvolvedor Full Stack",
             "url": "https://tawhinchiang.github.io/Portfolio-Dev-/",
             "image": "https://tawhinchiang.github.io/Portfolio-Dev-/assets/profile.jpg",
             "email": "mailto:tawhinchiang89@gmail.com",
@@ -47,7 +47,7 @@
                 "https://github.com/tawhinchiang",
                 "https://www.linkedin.com/in/tawhin-chiang-532127228"
             ],
-            "knowsAbout": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vite", "APIs REST"]
+            "knowsAbout": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Express", "Sequelize", "SQL", "APIs REST"]
         }
     </script>
 </head>
@@ -91,6 +91,7 @@
                 <a href="#featured-projects" data-nav-link data-i18n="navigation.projects">Projetos</a>
                 <a href="#experience" data-nav-link data-i18n="navigation.experience">Experiência</a>
                 <a href="#skills" data-nav-link data-i18n="navigation.skills">Competências</a>
+                <a href="#process" data-nav-link data-i18n="navigation.process">Processo</a>
                 <a href="#about" data-nav-link data-i18n="navigation.about">Sobre</a>
                 <a href="#contact" data-nav-link data-i18n="navigation.contact">Contato</a>
                 <a class="button button-small button-primary" href="assets/curriculo-tawhin-chiang.pdf" download>
@@ -107,13 +108,13 @@
                     <p class="eyebrow"><span data-i18n="hero.greeting">Olá, meu nome é</span> <span
                             class="eyebrow-name">Tawhin Chiang</span></p>
                     <p class="availability"><span aria-hidden="true"></span><span
-                            data-i18n="hero.availability">Em busca de oportunidades Front-end</span></p>
+                            data-i18n="hero.availability">Em busca de oportunidades Full Stack</span></p>
                     <h1><span data-i18n="hero.titleStart">Desenvolvedor</span> <span class="hero-title-highlight"
-                            data-i18n="hero.titleHighlight">Front-end Júnior</span></h1>
+                            data-i18n="hero.titleHighlight">Full Stack</span></h1>
                     <p class="hero-description" data-i18n="hero.description">
-                        Crio interfaces modernas, responsivas e fáceis de usar com HTML, CSS, JavaScript, TypeScript e
-                        React. Minha experiência em suporte de TI me ajuda a compreender problemas reais e construir
-                        soluções claras e confiáveis.
+                        Desenvolvo aplicações web completas, do front-end ao back-end, com HTML, CSS, JavaScript, TypeScript,
+                        React, Node.js e bancos de dados. Minha experiência em suporte de TI e sistemas me ajuda a compreender
+                        problemas reais e entregar soluções claras, confiáveis e orientadas a operação.
                     </p>
 
                     <ul class="hero-facts" aria-label="Informações principais"
@@ -169,6 +170,24 @@
                 </header>
 
                 <div class="featured-grid">
+                    <article class="featured-card" data-reveal>
+                        <img src="assets/images/Thumbnail_Project-10.svg" width="1200" height="630"
+                            alt="Painel e agendamento do Barbearia SaaS" data-i18n-alt="images.barbeariaSaas" loading="lazy">
+                        <div class="featured-card__body">
+                            <div class="project-meta">
+                                <span>Node.js</span><span>Express</span><span>Sequelize</span><span>WhatsApp API</span>
+                            </div>
+                            <h3>Barbearia SaaS</h3>
+                            <p data-i18n="featured.barbeariaSaasSummary">Sistema SaaS full stack para gestão e agendamento de barbearia, com área pública, painel administrativo, banco de dados e integração com WhatsApp.</p>
+                            <div class="project-actions">
+                                <a class="button button-small button-primary" href="https://github.com/tawhinchiang/BARBEARIASAAS"
+                                    target="_blank" rel="noreferrer" data-i18n="featured.sourceCode">Código no GitHub</a>
+                                <button class="button button-small button-ghost" type="button"
+                                    data-project-dialog="barbearia-saas" data-i18n="featured.caseStudy">Estudo de caso</button>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="featured-card" data-reveal>
                         <img src="assets/images/Thumbnail_Project-09.jpg" width="1000" height="436"
                             alt="Página inicial da Panificadora Bom Sabor" data-i18n-alt="images.panificadora"
@@ -285,8 +304,8 @@
             <div class="content-container">
                 <header class="section-heading section-heading--center" data-reveal>
                     <p class="section-kicker" data-i18n="skills.kicker">Competências</p>
-                    <h2 data-i18n="skills.title">Tecnologias organizadas por contexto</h2>
-                    <p data-i18n="skills.description">Use as abas para entender onde cada conhecimento aparece na minha atuação.</p>
+                    <h2 data-i18n="skills.title">Tecnologias Full Stack organizadas por contexto</h2>
+                    <p data-i18n="skills.description">Use as abas para entender como aplico front-end, back-end, ferramentas e conhecimentos complementares.</p>
                 </header>
 
                 <div class="skills-tabs" data-tabs data-reveal>
@@ -294,6 +313,8 @@
                         data-i18n-aria-label="accessibility.skillCategories">
                         <button type="button" role="tab" id="tab-front-end" aria-controls="panel-front-end"
                             aria-selected="true" data-tab="front-end" data-i18n="skills.frontEndTab">Front-end</button>
+                        <button type="button" role="tab" id="tab-back-end" aria-controls="panel-back-end"
+                            aria-selected="false" data-tab="back-end" tabindex="-1" data-i18n="skills.backEndTab">Back-end</button>
                         <button type="button" role="tab" id="tab-tools" aria-controls="panel-tools"
                             aria-selected="false" data-tab="tools" tabindex="-1" data-i18n="skills.toolsTab">Ferramentas</button>
                         <button type="button" role="tab" id="tab-complementary" aria-controls="panel-complementary"
@@ -314,6 +335,22 @@
                             <li><strong>React</strong><span data-i18n="skills.react">Componentes e organização de interfaces</span></li>
                             <li><strong>TypeScript</strong><span data-i18n="skills.typescript">Tipagem e segurança no desenvolvimento</span></li>
                             <li><strong>Vite</strong><span data-i18n="skills.vite">Ambiente moderno de desenvolvimento</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-panel" id="panel-back-end" role="tabpanel" aria-labelledby="tab-back-end"
+                        data-tab-panel="back-end">
+                        <div class="skill-intro">
+                            <h3 data-i18n="skills.backEndTitle">APIs, dados e integrações</h3>
+                            <p data-i18n="skills.backEndDescription">Conhecimentos usados para construir regras de negócio, persistência e integrações em aplicações full stack.</p>
+                        </div>
+                        <ul class="skill-grid">
+                            <li><strong>Node.js</strong><span data-i18n="skills.node">Runtime para serviços e aplicações web</span></li>
+                            <li><strong>Express</strong><span data-i18n="skills.express">Rotas, middlewares e APIs</span></li>
+                            <li><strong>Sequelize</strong><span data-i18n="skills.sequelize">Modelagem e acesso a dados com ORM</span></li>
+                            <li><strong>SQL / SQLite / PostgreSQL</strong><span data-i18n="skills.databases">Consultas e persistência relacional</span></li>
+                            <li><strong data-i18n="skills.authLabel">Autenticação e sessões</strong><span data-i18n="skills.auth">Controle de acesso e fluxos administrativos</span></li>
+                            <li><strong data-i18n="skills.integrationsLabel">Integrações</strong><span data-i18n="skills.integrations">WhatsApp Cloud API, REST e serviços externos</span></li>
                         </ul>
                     </div>
 
@@ -352,7 +389,40 @@
             </div>
         </section>
 
-        <section class="section" id="all-projects">
+        <section class="section" id="process" data-page-section>
+            <div class="content-container">
+                <header class="section-heading section-heading--center" data-reveal>
+                    <p class="section-kicker" data-i18n="process.kicker">Como eu trabalho</p>
+                    <h2 data-i18n="process.title">Processo orientado a produto e operação</h2>
+                    <p data-i18n="process.description">Uma abordagem prática para transformar necessidades reais em soluções web claras, do front-end ao back-end.</p>
+                </header>
+
+                <div class="process-grid" data-reveal>
+                    <article class="education-card">
+                        <p class="education-type" data-i18n="process.step1Label">1. Entendimento</p>
+                        <h3 data-i18n="process.step1Title">Contexto e requisitos</h3>
+                        <p data-i18n="process.step1Description">Mapeio o problema, usuários, regras de negócio e critérios de sucesso antes de implementar.</p>
+                    </article>
+                    <article class="education-card">
+                        <p class="education-type" data-i18n="process.step2Label">2. Implementação</p>
+                        <h3 data-i18n="process.step2Title">Front-end e back-end integrados</h3>
+                        <p data-i18n="process.step2Description">Desenvolvo interfaces, APIs, dados e integrações com código organizado e responsabilidades claras.</p>
+                    </article>
+                    <article class="education-card">
+                        <p class="education-type" data-i18n="process.step3Label">3. Validação</p>
+                        <h3 data-i18n="process.step3Title">Testes e qualidade</h3>
+                        <p data-i18n="process.step3Description">Verifico fluxos principais, responsividade, acessibilidade e casos de erro para reduzir retrabalho.</p>
+                    </article>
+                    <article class="education-card">
+                        <p class="education-type" data-i18n="process.step4Label">4. Entrega</p>
+                        <h3 data-i18n="process.step4Title">Deploy e evolução</h3>
+                        <p data-i18n="process.step4Description">Publico com configuração segura, documentando o necessário e preparando o projeto para melhorias contínuas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-contrast" id="all-projects">
             <div class="content-container">
                 <header class="section-heading section-heading--center" data-reveal>
                     <p class="section-kicker" data-i18n="projects.kicker">Portfólio completo</p>
@@ -364,6 +434,8 @@
                     data-i18n-aria-label="accessibility.projectFilters">
                     <button class="is-active" type="button" data-project-filter="all" aria-pressed="true"
                         data-i18n="projects.all">Todos</button>
+                    <button type="button" data-project-filter="full-stack" aria-pressed="false"
+                        data-i18n="projects.fullStack">Full Stack</button>
                     <button type="button" data-project-filter="react" aria-pressed="false">React</button>
                     <button type="button" data-project-filter="javascript" aria-pressed="false">JavaScript</button>
                     <button type="button" data-project-filter="html-css" aria-pressed="false"
@@ -517,6 +589,22 @@
                             </div>
                         </div>
                     </article>
+
+                    <article class="project-card" data-project-card data-categories="full-stack javascript html-css">
+                        <img src="assets/images/Thumbnail_Project-10.svg" width="1200" height="630"
+                            alt="Painel e agendamento do Barbearia SaaS" data-i18n-alt="images.barbeariaSaas" loading="lazy">
+                        <div class="project-card__body">
+                            <div class="project-meta"><span>Node.js</span><span>Express</span><span>Sequelize</span></div>
+                            <h3>Barbearia SaaS</h3>
+                            <p data-i18n="projects.barbeariaSaasSummary">SaaS full stack de agendamento e gestão para barbearias, com painel administrativo, banco de dados e integração com WhatsApp.</p>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/tawhinchiang/BARBEARIASAAS" target="_blank"
+                                    rel="noreferrer"><span data-i18n="featured.sourceCode">Código no GitHub</span> <span aria-hidden="true">↗</span></a>
+                                <button class="text-button" type="button" data-project-dialog="barbearia-saas"
+                                    data-i18n="projects.details">Detalhes</button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
 
                 <div class="show-more-container">
@@ -526,7 +614,7 @@
             </div>
         </section>
 
-        <section class="section section-contrast" id="about" data-page-section>
+        <section class="section" id="about" data-page-section>
             <div class="content-container about-layout">
                 <div class="about-copy" data-reveal>
                     <p class="section-kicker" data-i18n="about.kicker">Sobre e formação</p>

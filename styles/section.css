@@ -572,6 +572,20 @@
     margin-top: 0.5rem;
 }
 
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.process-grid .education-card h3 {
+    margin-block: 0.15rem 0.35rem;
+}
+
+.process-grid .education-card p:not(.education-type) {
+    color: var(--color-text-muted);
+}
+
 .education-list {
     display: grid;
     gap: 1rem;
@@ -767,7 +781,8 @@
     }
 
     .featured-grid,
-    .projects-grid {
+    .projects-grid,
+    .process-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -911,7 +926,8 @@
 
     .featured-grid,
     .projects-grid,
-    .skill-grid {
+    .skill-grid,
+    .process-grid {
         grid-template-columns: 1fr;
     }
 
