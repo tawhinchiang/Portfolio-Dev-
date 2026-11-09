@@ -60,6 +60,7 @@ window.portfolioTranslations = {
             hairdaySummary: "Aplicação web para listar, criar e excluir agendamentos por meio de uma API organizada em módulos.",
             barbeariaSaasSummary: "Sistema SaaS full stack para gestão e agendamento de barbearia, com área pública, painel administrativo, banco de dados e integração com WhatsApp.",
             viewProject: "Ver projeto",
+            adminPanel: "Painel admin",
             sourceCode: "Código no GitHub",
             caseStudy: "Estudo de caso",
             responsiveTag: "Responsivo",
@@ -351,7 +352,7 @@ window.portfolioTranslations = {
             guessingSummary: "A word game focused on components, interface state and interaction rules with static typing.",
             hairdaySummary: "A web application to list, create and delete appointments through a modular API integration.",
             barbeariaSaasSummary: "A full-stack SaaS system for barbershop management and scheduling, with public booking, an admin panel, a database, and WhatsApp integration.",
-            viewProject: "View project", sourceCode: "Source on GitHub", caseStudy: "Case study",
+            viewProject: "View project", adminPanel: "Admin panel", sourceCode: "Source on GitHub", caseStudy: "Case study",
             responsiveTag: "Responsive", modulesTag: "Modules"
         },
         experience: {
@@ -567,7 +568,7 @@ window.portfolioTranslations = {
             guessingSummary: "Juego de palabras centrado en componentes, estados de la interfaz y reglas de interacción con tipado estático.",
             hairdaySummary: "Aplicación web para listar, crear y eliminar citas mediante una integración modular con una API.",
             barbeariaSaasSummary: "Sistema SaaS full stack para la gestión y reserva en barberías, con área pública, panel administrativo, base de datos e integración con WhatsApp.",
-            viewProject: "Ver proyecto", sourceCode: "Código en GitHub", caseStudy: "Caso de estudio",
+            viewProject: "Ver proyecto", adminPanel: "Panel admin", sourceCode: "Código en GitHub", caseStudy: "Caso de estudio",
             responsiveTag: "Responsivo", modulesTag: "Módulos"
         },
         experience: {

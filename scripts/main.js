@@ -74,9 +74,19 @@ const projectLinks = {
     ],
     "barbearia-saas": [
         {
+            labelKey: "featured.viewProject",
+            url: "https://barbearia-saas-demo.onrender.com",
+            primary: true
+        },
+        {
+            labelKey: "featured.adminPanel",
+            url: "https://barbearia-saas-demo.onrender.com/admin/login",
+            primary: false
+        },
+        {
             labelKey: "featured.sourceCode",
             url: "https://github.com/tawhinchiang/BARBEARIASAAS",
-            primary: true
+            primary: false
         }
     ]
 };
